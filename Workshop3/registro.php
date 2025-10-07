@@ -1,7 +1,7 @@
 <?php
 include("conexion.php");
 
-// Obtener provincias de la base de datos
+
 $result = $conn->query("SELECT id, nombre FROM provincias");
 ?>
 

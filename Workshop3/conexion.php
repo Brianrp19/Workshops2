@@ -1,8 +1,8 @@
 <?php
 $host = "localhost";
-$user = "root";      // Tu usuario de MySQL
-$pass = "";          // Tu contraseña de MySQL
-$db   = "taller_php2"; // Nombre de tu base de datos
+$user = "root";     
+$pass = "";          
+$db   = "taller_php2"; 
 
 $conn = new mysqli($host, $user, $pass, $db);
 

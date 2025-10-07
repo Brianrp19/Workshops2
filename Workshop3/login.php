@@ -1,5 +1,5 @@
 <?php
-// Capturar el nombre de usuario enviado desde el registro
+
 $username = isset($_GET['username']) ? $_GET['username'] : '';
 ?>
 
