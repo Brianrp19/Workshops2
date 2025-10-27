@@ -1,5 +1,5 @@
 <?php
-// Clase que maneja la conexión (Encapsulamiento)
+
 class Database {
     private $host = "localhost";
     private $user = "root";

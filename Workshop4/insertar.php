@@ -1,7 +1,7 @@
 <?php
 include("conexion.php");
 
-// Clase que representa un Usuario (Abstracción)
+
 class User {
     private $nombre, $apellido, $correo, $telefono, $provincia;
 
