@@ -17,8 +17,6 @@ if ($username === '' || $name === '' || $lastname === '' || $password === '') {
 }
 
 $conn = getConnection();
-
-// ¿username ya existe?
 $chk = $conn->prepare("SELECT 1 FROM users WHERE username=? LIMIT 1");
 $chk->bind_param('s', $username);
 $chk->execute();
@@ -30,7 +28,6 @@ if ($exists) {
   header('Location: register.php?m=dup'); exit;
 }
 
-// crear (status=active por defecto, password MD5 para compatibilidad)
 $stmt = $conn->prepare(
   "INSERT INTO users (username,password,name,lastname,role,status)
    VALUES (?, MD5(?), ?, ?, ?, 'active')"
